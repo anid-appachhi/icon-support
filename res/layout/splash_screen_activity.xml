@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout android:id="@id/activity_screen_eight_" android:background="@drawable/bg_background_splash" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="center" android:layout_width="180.0dip" android:layout_height="180.0dip" android:src="@drawable/ic_splash_logo" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+</android.support.percent.PercentRelativeLayout>

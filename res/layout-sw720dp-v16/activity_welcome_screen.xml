@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@drawable/bg_background_splash" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="9.0dip">
+        <ImageView android:layout_gravity="left" android:id="@id/imageview_welcome_card_back" android:layout_width="30.0dip" android:layout_height="32.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/back_arrow" />
+        <TextView android:textSize="28.0dip" android:textColor="#ffffffff" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="  Create Account" android:layout_weight="1.0" android:fontFamily="@font/montserrat" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/happysmiley" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:weightSum="2.0">
+        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="#ff787878" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Congratulations!" android:layout_weight="1.0" />
+        <TextView android:textSize="28.0sp" android:textColor="#ff787878" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Here is your card" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/card" android:background="@drawable/card_background" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginTop="20.0dip">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/final_circleView" android:layout_width="230.0dip" android:layout_height="210.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/profile_camera" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_weight="1.0">
+                <TextView android:textSize="28.0dip" android:textStyle="bold" android:textColor="#ff9a9898" android:id="@id/final_card_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Mitchell Hart" />
+                <TextView android:textSize="22.0dip" android:textStyle="bold" android:id="@id/final_card_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Mitchel@abc.com" />
+                <TextView android:textSize="22.0dip" android:textStyle="bold" android:id="@id/final_card_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="+9895993920" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:weightSum="5.0">
+        <TextView android:textSize="28.0sp" android:textColor="#ff787878" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/thanks" android:layout_weight="0.5" />
+        <TextView android:textSize="28.0sp" android:textColor="#ff787878" android:gravity="center" android:layout_gravity="center" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:text="@string/accontcreated" android:layout_weight="0.5" />
+        <Button android:textSize="28.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_gotohome" android:background="@drawable/signin_background" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="25.0dip" android:text="Go to Home" android:layout_weight="1.0" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
